@@ -1,0 +1,64 @@
+
+
+// body,
+// html {
+//   height: 100%;
+// }
+
+// // .bg {
+// //   /* The image used */
+// //   background-image: url(../../../../assets/images/background.png);
+// //   position: fixed;
+// //   top:0;
+// //   left: 0;
+// //   width: 100vw;
+// //   height: 100vh;
+// // }
+.wrapper {
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+}
+
+.banner {
+  height: calc(100vh - 70px);
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+    }
+    
+    p {
+      color: #fff;
+    }
+
+    &--btn {
+      width: max-content;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+  }
+  
+  > img {
+    position: absolute;
+    width: 60%;
+    right: -25px;
+    top: 5%;
+  }
+
+  // &__figure {
+  //   position: relative;
+  //   overflow: hidden;
+
+  //   > img {
+  //     position: absolute;
+  //     width: 130%;
+  //     left: -80px;
+  //   }
+  // }
+}

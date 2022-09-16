@@ -1,0 +1,28 @@
+@import 'src/assets/theme/variables';
+
+.navbar {
+  &-brand > img {
+    height: 60px;
+  }
+
+  &-nav {
+    .nav-item + .nav-item {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.nav-item {
+  a {
+    color: $primaryLight;
+  }
+
+  &:hover,
+  &.active {
+    border-bottom: 2px solid $primaryLight;
+  }
+
+  &.active > a {
+    color: #fff;
+  }
+}
