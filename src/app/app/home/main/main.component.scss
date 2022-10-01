@@ -1,19 +1,5 @@
+@import 'src/assets/theme/variables';
 
-
-// body,
-// html {
-//   height: 100%;
-// }
-
-// // .bg {
-// //   /* The image used */
-// //   background-image: url(../../../../assets/images/background.png);
-// //   position: fixed;
-// //   top:0;
-// //   left: 0;
-// //   width: 100vw;
-// //   height: 100vh;
-// // }
 .wrapper {
   background-image: url('/assets/images/background.png');
   background-size: cover;
@@ -29,6 +15,7 @@
     h1 {
       font-size: 4rem;
       color: #fff;
+      margin-top: 8rem;
     }
     
     p {
@@ -62,3 +49,39 @@
   //   }
   // }
 }
+
+
+.center {
+  margin-left: 5rem;
+  margin-top: 6rem;
+
+}
+
+.solutions {
+
+  color:#A9A9A9		;
+  font-size: 15px;
+
+}
+
+.btn {
+  width: max-content;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border: 2px solid #A9A9A9;
+  color: #A9A9A9;
+ 
+}
+
+.line {
+
+  width: 20%;
+  height: 0;
+  border: 1px solid $primaryLight;
+  margin: 3px;
+  display:inline-block;
+  color: $primaryLight;
+  margin-left: 2rem;
+
+}
+
