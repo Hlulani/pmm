@@ -69,8 +69,17 @@
   text-decoration: none;
   padding: 0.5rem 2rem;
   border: 2px solid #A9A9A9;
+  border-radius: 1px;
   color: #A9A9A9;
  
+
+  &:hover {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    transition: .3s;
+  }
 }
 
 .line {
@@ -81,7 +90,68 @@
   margin: 3px;
   display:inline-block;
   color: $primaryLight;
-  margin-left: 2rem;
+  margin-left: 4.3rem;
+
+}
+
+.number-orb {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+}
+.number-orb--second {
+  border: 1px solid rgb(123, 122, 122);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #fbfbfb
+
+}
+
+.intro-menu {
+  h4 {
+    height: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+  }
+}
+
+.our-solution-intro {
+
+    font-weight: 600;
+ 
+}
+
+.img-position {
+      align-items: flex-end; 
+      position: relative;
+      right: 0
+}
+
+.our-solution-paragraph {
+  display: flex;
+  align-items: flex-end;
+  height: 450px;
+  
+}
+
+.agency-paragraph {
+  color: purple;
+
+  font-weight: 600;
+  font-size: large;
 
 }
 

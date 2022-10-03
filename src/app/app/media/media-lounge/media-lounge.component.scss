@@ -1,0 +1,47 @@
+@import 'src/assets/theme/variables';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+// .btn {
+//     width: max-content;
+//     text-decoration: none;
+//     padding: 0.5rem 2rem;
+//     border: 2px solid #87196a;
+//     color: $primaryLight;
+// }
+
+.opensans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+
+}
+
+.solutions {
+
+    color: #A9A9A9;
+    font-size: 15px;
+
+}
+
+.btn {
+    width: max-content;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: 2px solid #A9A9A9;
+    border-radius: 1px;
+    color: #A9A9A9;
+   
+  
+    &:hover {
+      background-color: purple;
+      color: #fff;
+      border: none;
+      border-radius: 1px;
+      transition: .3s;
+    }
+  }
+  
+  .card-primary {
+    border: 2px solid rgb(231, 228, 228);
+    border-radius: 1px;
+  }

@@ -1,0 +1,9 @@
+@import 'src/assets/theme/variables';
+
+.btn {
+    width: max-content;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: 2px solid #87196a;
+    color: $primaryLight;
+}  

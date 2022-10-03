@@ -9,7 +9,8 @@ import { AboutUsComponent } from './app/about/about-us/about-us.component';
 import { ContactUsComponent } from './app/contact/contact-us/contact-us.component';
 import { MenuItemsComponent } from './app/home/nav/menu-items.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { CarouselComponent } from './app/home/main/main/carousel/carousel/carousel.component';
+import { FooterComponent } from './app/home/main/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MediaLoungeComponent,
     AboutUsComponent,
     ContactUsComponent,
-    MenuItemsComponent
+    MenuItemsComponent,
+    CarouselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
