@@ -27,7 +27,6 @@
     width: max-content;
     text-decoration: none;
     padding: 0.5rem 2rem;
-    border: 2px solid #A9A9A9;
     border-radius: 1px;
     color: #A9A9A9;
    
@@ -44,4 +43,37 @@
   .card-primary {
     border: 2px solid rgb(231, 228, 228);
     border-radius: 1px;
+  }
+
+  .calendar-button {
+    background-color: #87196a;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 14px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 2px;
+    height: 62px;
+  }
+
+  .podcast-btn {
+    border: 2px solid #A9A9A9;
+  }
+
+
+
+  .video {
+        padding-right: 16rem; 
+        padding-left: 16rem;
+  }
+
+  .frame {
+    height:500px;
+    width: 100%;
   }
