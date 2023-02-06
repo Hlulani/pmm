@@ -59,7 +59,7 @@
 
 .solutions {
 
-  color:#A9A9A9		;
+  color: #6D6F76		;
   font-size: 15px;
 
 }
@@ -68,13 +68,13 @@
   width: max-content;
   text-decoration: none;
   padding: 0.5rem 2rem;
-  border: 2px solid #A9A9A9;
+  border: 1px solid #A9A9A9;
   border-radius: 1px;
   color: #A9A9A9;
  
 
   &:hover {
-    background-color: purple;
+    background-color:$primaryLight;
     color: #fff;
     border: none;
     border-radius: 1px;
@@ -130,6 +130,7 @@
 .our-solution-intro {
 
     font-weight: 600;
+    white-space: nowrap;
     
 }
 
@@ -155,7 +156,9 @@
 }
 
 .book-now {
-  border-color: #393737;;
+  border-color: #353535;
+  color: #353535;
+  font-weight: 600;
 }
 
 
@@ -172,3 +175,24 @@
   line-height: 20px;
   margin-bottom: 2rem;
 }
+
+@media( max-width:1400px){
+
+  .our-solution-intro {
+    white-space: initial;
+  }
+
+  .solutions-wrapper{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media( max-width:1000px){
+
+  .solutions-wrapper{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
