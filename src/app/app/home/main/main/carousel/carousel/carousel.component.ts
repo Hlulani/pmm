@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -33,7 +33,31 @@ export class CarouselComponent implements OnInit {
       url: 'https://i.pinimg.com/originals/2e/65/75/2e6575d405dea87b573cb0341deacca9.jpg',
     },
   ];
+  @ViewChild('cardsContainer') container: ElementRef | undefined;
   constructor() {}
+
+  scrollLeft = () => {
+    if (!this.container) {
+      return;
+    }
+    console.log('Scroll Left');
+    this.container.nativeElement.scrollTo({
+      left: this.container.nativeElement.scrollRight - 200,
+      behavior: 'smooth',
+    });
+  };
+
+  scrollRight = () => {
+    if (!this.container) {
+      return;
+    }
+    console.log('Scroll Right');
+
+    this.container.nativeElement.scrollTo({
+      left: this.container.nativeElement.scrollLeft + 200,
+      behavior: 'smooth',
+    });
+  };
 
   ngOnInit(): void {}
 }
