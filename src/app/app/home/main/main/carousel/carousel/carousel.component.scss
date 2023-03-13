@@ -44,6 +44,48 @@
   }
 }
 
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+
+  nav {
+    height: 34px;
+    width: 34px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    $errHeight: 24px;
+
+    .arrow {
+      width: $errHeight;
+      height: $errHeight;
+      border-radius: 100px;
+      inset: 0;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      background-color: $primaryColor;
+
+      i {
+        line-height: $errHeight;
+        color: #fff;
+      }
+    }
+  }
+
+  nav:hover {
+    background-color: $primaryColor;
+    .arrow {
+      background-color: #fff;
+      i {
+        color: #000;
+      }
+    }
+  }
+}
+
 .btn {
   width: max-content;
   text-decoration: none;
