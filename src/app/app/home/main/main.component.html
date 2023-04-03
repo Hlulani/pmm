@@ -8,20 +8,13 @@
     <div class="row banner mb-5">
       <div class="col-md-6 d-flex flex-column justify-content-center banner__content">
         <h1 class="mb-5">
-          Here's our value proposition
-          <span class="d-block">- we're awesome</span>
+          {{headingDetails.title}}
+          <span class="d-block">- {{headingDetails.subTitle}} </span>
         </h1>
-        <p class="mb-4">
-          This example creates a full page background image. Try to resize the
-          browser window to see how it always will cover the full screen (when
-          scrolled to top), and that it scales nicely on all screen sizes.
-        </p>
-
+        <p class="mb-4">{{headingDetails.description}}</p>
         <a class="banner__content--btn" href="#">View Details</a>
       </div>
-      <!-- <div class="col banner__figure">
-      </div> -->
-      <img src="assets/images/2.png" alt="banner-figure" />
+      <img src="assets/images/2.png" alt="banner-figure"/>
     </div>
   </div>
   <!-- end of banner -->
@@ -32,17 +25,17 @@
 <!-- section 1 body-->
 <div class="container pt-3 solutions-wrapper">
   <div class="row align-items-center my-5 rows ">
-    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+    <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
       <div class="col-12 left-side">
         <div class="solutions mb-3">&ndash; Our solutions</div>
-        <h3 class="our-solution-intro">
+        <h3>
           Versatile and creative production
           <span class="d-block">Services for the creative ambitious</span>
         </h3>
       </div>
     </div>
     <!-- <div style="flex:1"></div> -->
-    <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12 text-right" >
+    <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 text-right">
       <div class="col-12 right-side mt-4">
         <a class="btn btn-default book-now" href="#">Book now</a>
       </div>
@@ -53,52 +46,15 @@
 
   <div class="line mb-4 "></div>
   <div class="row align-items-center intro-menu mb-5">
-    <div class="row col-sm">
+    <div class="row col-sm" *ngFor="let serv of services">
       <div class="number-orb">
-        1
+        {{serv.srNum}}
       </div>
-      <div class="col mx-4">
+      <div class="col ml-2 mr-4 pt-3">
         <div class="d-flex">
-          <p class="awesome-header">Awesome service</p>
+          <p class="awesome-header">{{serv.title}}</p>
         </div>
-
-        <p>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia
-        </p>
-      </div>
-    </div>
-
-    <div class="row col-sm">
-      <div class="number-orb">
-        2
-      </div>
-      <div class="col mx-4 ">
-        <div class="d-flex">
-          <p class="awesome-header">Awesome service</p>
-        </div>
-        
-        <p>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia
-        </p>
-      </div>
-    </div>
-    <div class="row col-sm">
-
-      <div class="number-orb">
-        3
-      </div>
-      <div class="col mx-4 ">
-        <div class="d-flex">
-          <p class="awesome-header">Awesome service</p>
-        </div>       
-        
-        <p>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia
-
-        </p>
+        <p>{{serv.description}}</p>
       </div>
     </div>
 
@@ -106,40 +62,13 @@
 </div>
 
 <!-- section 3 body-->
-<!-- <div class="container"> -->
-<div class="row  m-5 pt-5">
-  <div class="col-xs-12 col-md-6 img-position" style="text-align: left">
-    <img src="../../assets/images/5.jpg" class="img-fluid " alt="" />
-  </div>
-  <div class="col-xs-12 col-md-6 ">
-    <h3 class="m-4 our-solution-intro ">
-      We're an experienced and very
-      <span class="d-block">creative production company</span>
-    </h3>
-    <p class="m-4">
-      The French lettering company Letraset manufactured a set of dry-transfer
-      sheets which included the lorem ipsum filler text in a variety of fonts,
-      sizes, and layouts. These sheets of lettering could be rubbed on
-      anywhere and were quickly adopted by graphic artists, printers,
-      architects, and advertisers for their professional look and ease of use.
-    </p>
-
-    <div class="m-4">
-      <p>
-        Pabi Moloi
-        <span class="d-block solutions">FOUNDER & CEO</span>
-      </p>
-    </div>
-  </div>
-</div>
-<!-- </div> -->
-
-<!-- section 4 body-->
-<div class="container  pt-4">
-  <div class="row gap100 m-5">
+<div class="container">
+  <div class="row m-5 pt-5">
     <div class="col-xs-12 col-md-6">
-      <div class="solutions m-4">&ndash; About agency</div>
-      <h3 class="m-4 our-solution-intro">
+      <img src="../../assets/images/5.jpg" class="img-founder img-fluid" alt=""/>
+    </div>
+    <div class="col-xs-12 col-md-6 py-5">
+      <h3 class="m-4">
         We're an experienced and very
         <span class="d-block">creative production company</span>
       </h3>
@@ -150,46 +79,67 @@
         anywhere and were quickly adopted by graphic artists, printers,
         architects, and advertisers for their professional look and ease of use.
       </p>
-
       <div class="m-4">
         <p>
-          Pabi Moloi
-          <span class="d-block solutions">FOUNDER & CEO</span>
+          {{hero.name}}
+          <span class="d-block solutions">{{hero.designation}}</span>
         </p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="col-xs-12 col-md-6 ">
-      <!-- <h3 class="m-4">
-       Our Philosopy
+<!-- section 4 body-->
+<div class="container pt-5">
+  <div class="row gap100 m-5">
+    <div class="col-xs-12 col-md-6">
+      <div class="solutions m-4">&ndash; About agency</div>
+      <h3 class="m-4">
+        We're driven to create the most memorable productions
       </h3>
       <p class="m-4">
-        Far far away, behind the word mountains, far from the countries Vokalia
-      </p> -->
+        The French lettering company Letraset manufactured a set of dry-transfer
+        sheets which included the lorem ipsum filler text in a variety of fonts,
+        sizes, and layouts. These sheets of lettering could be rubbed on
+        anywhere and were quickly adopted by graphic artists, printers,
+        architects, and advertisers for their professional look and ease of use.
+      </p>
 
+      <div class="m-4">
+        <p>{{hero.name}}<span class="d-block solutions">{{hero.designation}}</span></p>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-5 offset-md-1">
       <div class="row col-sm m-4">
         <div class="number-orb--second agency-paragraph">
-          <i class="fa-solid fa-greater-than"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 491.5 491.5" height="512"
+               viewBox="0 0 491.5 491.5" width="512">
+            <g fill="#b3266c" clip-rule="evenodd" fill-rule="evenodd">
+              <path d="m143 35.5h-86.7l132.8 207.6c1 1.6 1 3.6 0 5.2l-132.8 207.7h86.7l134.5-210.2z"/>
+              <path d="m303.8 35.5h-86.8l132.8 207.6c1 1.6 1 3.6 0 5.2l-132.7 207.7h86.8l134.4-210.2z"/>
+            </g>
+          </svg>
         </div>
         <div class="col mx-4 ">
-          <h4 class="font-weight-bold"> Our Philosopy</h4>
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia
-          </p>
+          <h4 class="font-weight-bold"> {{philosophy.title}}</h4>
+          <p>{{philosophy.description}}</p>
         </div>
       </div>
 
       <div class="row col-sm m-4">
         <div class="number-orb--second agency-paragraph">
-          <i class="fa-solid fa-greater-than"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 491.5 491.5" height="512"
+               viewBox="0 0 491.5 491.5" width="512">
+            <g fill="#b3266c" clip-rule="evenodd" fill-rule="evenodd">
+              <path d="m143 35.5h-86.7l132.8 207.6c1 1.6 1 3.6 0 5.2l-132.8 207.7h86.7l134.5-210.2z"/>
+              <path d="m303.8 35.5h-86.8l132.8 207.6c1 1.6 1 3.6 0 5.2l-132.7 207.7h86.8l134.4-210.2z"/>
+            </g>
+          </svg>
         </div>
         <div class="col mx-4 ">
-          <h4 class="font-weight-bold"> Our Mission</h4>
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia
-          </p>
+          <h4 class="font-weight-bold"> {{mission.title}}</h4>
+          <p>{{mission.description}}</p>
         </div>
       </div>
 
@@ -197,8 +147,10 @@
   </div>
 </div>
 
+<div class="container">
+  <app-carousel></app-carousel>
+</div>
 
-
-<app-carousel></app-carousel>
 <app-media-lounge></app-media-lounge>
+
 <app-footer></app-footer>

@@ -1,8 +1,8 @@
-@import 'src/assets/theme/variables';
+@import "src/assets/theme/variables";
 
 .navbar {
   &-brand > img {
-    height: 60px;
+    height: 80px;
   }
 
   &-nav {
@@ -10,6 +10,10 @@
       margin-left: 2rem;
     }
   }
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
 }
 
 .nav-item {

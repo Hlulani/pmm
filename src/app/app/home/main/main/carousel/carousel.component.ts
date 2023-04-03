@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -34,7 +34,9 @@ export class CarouselComponent implements OnInit {
     },
   ];
   @ViewChild('cardsContainer') container: ElementRef | undefined;
-  constructor() {}
+
+  constructor() {
+  }
 
   scrollLeft = () => {
     if (!this.container) {
@@ -59,5 +61,6 @@ export class CarouselComponent implements OnInit {
     });
   };
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

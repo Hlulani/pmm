@@ -1,25 +1,32 @@
-
-@import 'src/assets/theme/variables';
-
+@import "src/assets/theme/variables";
 
 .footer {
-
-    background-color: #87196a;;
+  background-color: $primaryColor;
+  padding-bottom: 150px;
 }
 
-.img-fluid {
-    max-width: 27%;
-    height: auto;
+.footer-white {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-spacing {
-    margin-top: 8rem;
-    text-align: left;
+  margin-top: 8rem;
+  text-align: left;
 }
 
 .solutions {
+  color: #a9a9a9;
+}
 
-    color:#A9A9A9		;
-    
-  
+.footer-links a {
+  padding-right: 60px;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    color: $primaryColor;
   }
+}

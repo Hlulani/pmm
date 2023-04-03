@@ -2,7 +2,6 @@
 
 .cards-container {
   overflow: hidden;
-  overflow-x: auto;
   white-space: nowrap;
 }
 
@@ -36,6 +35,7 @@
     font-weight: 600;
     font-size: 14px;
   }
+
   .description {
     color: #fff;
     text-align: left;
@@ -66,9 +66,9 @@
       margin: auto;
       position: absolute;
       text-align: center;
-      background-color: $primaryColor;
+      background-color: $primaryLight;
 
-      i {
+      svg {
         line-height: $errHeight;
         color: #fff;
       }
@@ -76,9 +76,11 @@
   }
 
   nav:hover {
-    background-color: $primaryColor;
+    background-color: $primaryLight;
+
     .arrow {
       background-color: #fff;
+
       i {
         color: #000;
       }
@@ -98,6 +100,7 @@
 .home-demo .item {
   background: #ff3f4d;
 }
+
 .home-demo h2 {
   color: #fff;
   text-align: center;

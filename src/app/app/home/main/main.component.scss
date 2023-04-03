@@ -1,23 +1,24 @@
-@import 'src/assets/theme/variables';
+@import "src/assets/theme/variables";
 
 .wrapper {
-  background-image: url('/assets/images/background.png');
+  background-image: url("/assets/images/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner {
-  height: calc(100vh - 70px);
   position: relative;
   overflow: hidden;
+  padding-bottom: 142px;
 
   &__content {
-    
     h1 {
       font-size: 4rem;
       color: #fff;
-      margin-top: 8rem;
+      margin-top: 14rem;
+      font-weight: bold;
     }
-    
+
     p {
       color: #fff;
     }
@@ -28,14 +29,18 @@
       padding: 0.5rem 2rem;
       border: 2px solid #fff;
       color: #fff;
+
+      &:hover {
+        background-color: $primaryLight;
+        border: 2px solid $primaryLight;
+      }
     }
   }
-  
+
   > img {
     position: absolute;
     width: 60%;
     right: -25px;
-    top: 5%;
   }
 
   // &__figure {
@@ -50,52 +55,51 @@
   // }
 }
 
+.img-founder {
+  position: absolute;
+  left: -200px;
+  height: 520px;
+}
 
 .center {
   margin-left: 5rem;
   margin-top: 6rem;
-
 }
 
 .solutions {
-
-  color: #6D6F76		;
+  color: #6d6f76;
   font-size: 15px;
-
 }
 
 .btn {
   width: max-content;
   text-decoration: none;
   padding: 0.5rem 2rem;
-  border: 1px solid #A9A9A9;
+  border: 1px solid #a9a9a9;
   border-radius: 1px;
-  color: #A9A9A9;
- 
+  color: #a9a9a9;
 
   &:hover {
-    background-color:$primaryLight;
+    background-color: $primaryLight;
     color: #fff;
     border: none;
     border-radius: 1px;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
 .line {
-
   width: 20%;
   height: 0;
   border: 1px solid $primaryLight;
   margin: 3px;
-  display:inline-block;
+  display: inline-block;
   color: $primaryLight;
   margin-left: 4.3rem;
-
 }
 
 .number-orb {
-  border: 1px solid #ccc;
+  background-color: #f2f3f5;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
@@ -104,10 +108,9 @@
   align-items: center;
   font-weight: 600;
   font-size: 1.1rem;
-
 }
 .number-orb--second {
-  border: 1px solid rgb(123, 122, 122);
+  background-color: #f2f3f5;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
@@ -116,8 +119,6 @@
   align-items: center;
   font-weight: 600;
   font-size: 1.1rem;
-  background: #fbfbfb
-
 }
 
 .intro-menu {
@@ -128,31 +129,26 @@
 }
 
 .our-solution-intro {
-
-    font-weight: 600;
-    white-space: nowrap;
-    
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .img-position {
-      align-items: flex-end; 
-      position: relative;
-      right: 0
+  align-items: flex-end;
+  position: relative;
+  right: 0;
 }
 
 .our-solution-paragraph {
   display: flex;
   align-items: flex-end;
   height: 450px;
-  
 }
 
 .agency-paragraph {
   color: purple;
-
   font-weight: 600;
   font-size: large;
-
 }
 
 .book-now {
@@ -161,12 +157,10 @@
   font-weight: 600;
 }
 
-
-.solutions-wrapper{
-  padding-left: 13rem;
-  padding-right: 13rem;
+.solutions-wrapper {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
-
 
 .awesome-header {
   margin-top: 0;
@@ -176,23 +170,16 @@
   margin-bottom: 2rem;
 }
 
-@media( max-width:1400px){
-
-  .our-solution-intro {
-    white-space: initial;
-  }
-
-  .solutions-wrapper{
+@media (max-width: 1400px) {
+  .solutions-wrapper {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 }
 
-@media( max-width:1000px){
-
-  .solutions-wrapper{
+@media (max-width: 1000px) {
+  .solutions-wrapper {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
-
