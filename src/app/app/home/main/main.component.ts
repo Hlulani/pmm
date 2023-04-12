@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -44,10 +45,15 @@ export class MainComponent implements OnInit {
     name: 'Pabi Moloi'
   }
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
+  }
+
+
+  bookNow() {
+    this.router.navigateByUrl('/contact');
   }
 
 }
