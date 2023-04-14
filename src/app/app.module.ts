@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -11,6 +11,7 @@ import {MenuItemsComponent} from './app/home/nav/menu-items.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {FooterComponent} from './app/home/main/footer/footer.component';
 import {CarouselComponent} from "./app/home/main/main/carousel/carousel.component";
+import { MediaComponent } from './app/home/media/media.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CarouselComponent} from "./app/home/main/main/carousel/carousel.componen
     ContactUsComponent,
     MenuItemsComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import {CarouselComponent} from "./app/home/main/main/carousel/carousel.componen
     FormsModule, ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule {
 }
