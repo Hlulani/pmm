@@ -1,34 +1,48 @@
 .bg-image {
-    position: relative; 
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .bg-image::before {    
-      content: "";
-      background-image: url('../../../../assets/images/4.png');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.75;
-      background-position: center;
+  background-image: url("/assets/images/img-mic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  &-brand > img {
+    height: 80px;
   }
 
+  &-nav {
+    .nav-item + .nav-item {
+      margin-left: 2rem;
+    }
+  }
+}
 
-  .img-founder {
-    position: absolute;
-    left: -200px;
-    height: 520px;
+.navbar-nav .nav-link {
+  font-size: 14px;
+}
+.nav-item {
+  a {
+    color: white;
   }
 
+  &:hover,
+  &.active {
+    border-bottom: 2px solid #a5346b;
+  }
 
-  @import "src/assets/theme/variables";
+  &.active > a {
+    color: #fff;
+  }
+}
+
+.img-founder {
+  position: absolute;
+  left: -200px;
+  height: 520px;
+}
+
+@import "src/assets/theme/variables";
 
 .wrapper {
   background-image: url("/assets/images/background.png");
@@ -45,7 +59,7 @@
     h1 {
       font-size: 4rem;
       color: #fff;
-      margin-top: 14rem;
+      margin-top: 10rem;
       font-weight: bold;
     }
 
@@ -215,10 +229,13 @@
 }
 
 .space {
-    margin-bottom: 4.5rem !important;;
+  margin-bottom: 4.5rem !important;
 }
 
 .about-agency {
-    padding-top: 8rem !important;
+  padding-top: 2rem !important;
 }
-  
+
+.px-6 {
+  padding-bottom: 8rem !important;
+}

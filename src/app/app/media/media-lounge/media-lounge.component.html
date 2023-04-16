@@ -1,25 +1,60 @@
-<app-menu></app-menu>
-<div class="bg-image">
-</div>
+<header class="bg-image">
+  <!-- <app-menu id="about-us"></app-menu> -->
+  <nav id="media" class="navbar navbar-expand-lg navbar-light px-5 py-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="d-block w-100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" ariaCurrentWhenActive="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/media" routerLinkActive="active" ariaCurrentWhenActive="page">Media
+              Lounge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active"
+              ariaCurrentWhenActive="page">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row banner mb-5">
+      <div class="col-md-6 d-flex flex-column justify-content-center banner__content">
+        <h1 class="mb-5">Media Lounge</h1>
+      </div>
+    </div>
+  </div>
+</header>
 
 <!-- Blogs -->
 <div class="container">
   <div class="row m-5 pt-5">
     <div class="col-xs-12 col-md-6">
-      <img src="../../../../assets/images/4.png" class="img-founder img-fluid" alt=""/>
+      <img src="../../../../assets/images/4.png" class="img-founder img-fluid" alt="" />
     </div>
     <div class="col-xs-12 col-md-6 py-5">
+      <h4 class="m-4">&ndash; PODCAST</h4>
       <h3 class="m-4">
-        We're an experienced and very
-        <span class="d-block">creative production company</span>
+        On her way she met
       </h3>
       <p class="m-4">
         The French lettering company Letraset manufactured a set of dry-transfer
         sheets which included the lorem ipsum filler text in a variety of fonts,
-        sizes, and layouts. These sheets of lettering could be rubbed on
-        anywhere and were quickly adopted by graphic artists, printers,
-        architects, and advertisers for their professional look and ease of use.
+        sizes, and layouts.
       </p>
+      <a class="m-4 media-link" href="" target="_blank">Listen Now <i class="ps-2 bi bi-box-arrow-in-up-right"></i></a>
       <div class="m-4">
         <p>
           <span class="d-block solutions"></span>
@@ -32,19 +67,18 @@
 
 <div class="container">
   <div class="row m-5 pt-5">
-  
+
     <div class="col-xs-12 col-md-6 py-5">
+      <h4 class="m-4">&ndash; YOUTUBE VIDEO</h4>
       <h3 class="m-4">
-        We're an experienced and very
-        <span class="d-block">creative production company</span>
+        Even the all-powerful Pointing
       </h3>
       <p class="m-4">
         The French lettering company Letraset manufactured a set of dry-transfer
         sheets which included the lorem ipsum filler text in a variety of fonts,
-        sizes, and layouts. These sheets of lettering could be rubbed on
-        anywhere and were quickly adopted by graphic artists, printers,
-        architects, and advertisers for their professional look and ease of use.
+        sizes, and layouts.
       </p>
+      <a class="m-4 media-link" href="" target="_blank">Watch Now <i class="ps-2 bi bi-box-arrow-in-up-right"></i></a>
       <div class="m-4">
         <p>
           <span class="d-block solutions"></span>
@@ -52,7 +86,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-md-6">
-      <img src="../../../../assets/images/3.jpg" class="img-founder img-fluid" alt=""/>
+      <img src="../../../../assets/images/3.jpg" class="img-founder img-fluid" alt="" />
     </div>
   </div>
 </div>
@@ -61,20 +95,19 @@
 <div class="container">
   <div class="row m-5 pt-5">
     <div class="col-xs-12 col-md-6">
-      <img src="../../assets/images/5.jpg" class="img-founder img-fluid" alt=""/>
+      <img src="../../assets/images/5.jpg" class="img-founder img-fluid" alt="" />
     </div>
     <div class="col-xs-12 col-md-6 py-5">
+      <h4 class="m-4">&ndash; PODCAST</h4>
       <h3 class="m-4">
-        We're an experienced and very
-        <span class="d-block">creative production company</span>
+        On her way she met
       </h3>
       <p class="m-4">
         The French lettering company Letraset manufactured a set of dry-transfer
         sheets which included the lorem ipsum filler text in a variety of fonts,
-        sizes, and layouts. These sheets of lettering could be rubbed on
-        anywhere and were quickly adopted by graphic artists, printers,
-        architects, and advertisers for their professional look and ease of use.
+        sizes, and layouts.
       </p>
+      <a class="m-4 media-link" href="" target="_blank">Listen Now <i class="ps-2 bi bi-box-arrow-in-up-right"></i></a>
       <div class="m-4">
         <p>
           <span class="d-block solutions"></span>
@@ -83,15 +116,5 @@
     </div>
   </div>
 </div>
-
 
 <app-footer></app-footer>
-
-
-
-
-
- 
-
-
-

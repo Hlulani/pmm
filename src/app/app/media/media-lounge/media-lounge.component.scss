@@ -1,14 +1,6 @@
 @import "src/assets/theme/variables";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-// .btn {
-//     width: max-content;
-//     text-decoration: none;
-//     padding: 0.5rem 2rem;
-//     border: 2px solid #87196a;
-//     color: $primaryLight;
-// }
-
 .video {
   position: absolute;
   top: 0;
@@ -31,6 +23,18 @@
 
 .yt-channel {
   margin: 80px 0 80px 0;
+}
+
+.media-link {
+  text-decoration: none;
+  color: $primaryLight;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.media-link:hover {
+  text-decoration: none;
+  color: $primaryColor;
 }
 
 .btn {
@@ -102,25 +106,78 @@
   font-weight: 400;
 }
 
-
 .bg-image {
-  position: relative; 
-  height: 50vh;
+  background-image: url("/assets/images/img-m-mic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.bg-image::before {    
-    content: "";
-    background-image: url('../../../../assets/images/4.png');
-    background-size: cover;
+.navbar {
+  &-brand > img {
+    height: 80px;
+  }
+
+  &-nav {
+    .nav-item + .nav-item {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+}
+.nav-item {
+  a {
+    color: white;
+  }
+
+  &:hover,
+  &.active {
+    border-bottom: 2px solid #a5346b;
+  }
+
+  &.active > a {
+    color: #fff;
+  }
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 142px;
+
+  &__content {
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+      margin-top: 10rem;
+      font-weight: bold;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    &--btn {
+      width: max-content;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      border: 2px solid #fff;
+      color: #fff;
+
+      &:hover {
+        background-color: $primaryLight;
+        border: 2px solid $primaryLight;
+      }
+    }
+  }
+
+  > img {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
-    background-position: center;
+    width: 60%;
+    right: -25px;
+  }
 }
